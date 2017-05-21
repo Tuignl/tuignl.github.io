@@ -1,2 +1,1 @@
-# tuignl.github.io
-Lifecoach project
+# Lifecoach

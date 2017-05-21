@@ -1,0 +1,206 @@
+// compileCompressed: ../css/$1.css
+
+// imports
+
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,400i,700);
+@import "colors";
+
+$padding: 2rem;
+$catsize: 5rem;
+$border: 1px solid black;
+$iconsize: 3rem;
+$background: url(../img/topbarbg.png);
+
+// globale stijlen
+
+body,html{
+    font-family: "Montserrat";
+}
+hr{
+    border-color:$lgrey;
+}
+.link{ //mag ooit weg
+    color:$blue;
+}
+section{
+    padding : {
+        top: $padding;
+        bottom: $padding;
+    }
+}
+
+// handige classes
+
+.alignright{
+    text-align:right;
+}
+
+
+// bovenste balk met logo, zoekbalk, etc sectie
+
+#topbar{
+    background: $background;
+    color: white;
+    background : {
+        position:center;
+        size: cover;
+    }
+    text-align:center;
+    padding-top:$padding / 2;
+    h4{
+        margin : {
+            bottom: $padding;
+            top: $padding;
+        }
+    }
+}
+
+#topmenu{
+    text-align:left;
+    position:relative;
+}
+
+#logo{
+    margin-top: $padding;
+    font-weight:700;
+    letter-spacing:0.1rem;
+    text-shadow: 0 0 20px rgba(0,0,0,0.3);
+    resize:both 10px;
+    width:16rem;
+}
+
+#usericon{
+    display:inline-block;
+    top:0.2rem;
+    right:0.5rem;
+    position:absolute;
+    width: $iconsize;
+    height: $iconsize;
+    text-align:center;
+}
+
+#topbar input{
+    text-align:center;
+}
+
+// categorien sectie
+
+#categories{
+    letter-spacing: 0.1rem;
+    padding :{
+        top:0;
+        bottom:0;
+    }
+    font : {
+        weight:400;
+        size:0.8rem;
+    }
+    text :{
+        align:center;
+        transform: uppercase;
+    }
+    .row{
+        box-shadow: 0 0 10px rgba(0,0,0,0.05);
+        border : {
+            top:0;
+            left: $lgrey 1px solid;
+            right: $lgrey 1px solid;
+        }
+    }
+}
+
+#counter{
+    position:absolute;
+    top:-0.5rem;
+    right:-0.8rem;
+}
+
+.catbox{
+    height: 4.5rem;;
+    border: none;
+    border-radius:0.5rem;
+    text-align:center;
+}
+
+.catcontent {
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    color: $grey;
+    span {
+        display:inline-block;
+        position:relative;
+    }
+}
+
+// antwoorden sectie
+
+#answers {
+    h5{
+        color: $blue;
+        display:inline-block;
+    }
+    h6{
+        display:inline-block;
+        color: $grey;
+        margin-left:2rem;
+    }
+    h4{
+        color:$grey;
+    }
+}
+
+#searchinfo{
+    padding-bottom: $padding;
+}
+
+.author{
+    font-size:0.7rem;
+    margin-bottom:3rem !important;
+    color: $blue;
+}
+#author2{
+    color: $blue;
+}
+.answer{
+    margin-bottom:0.4rem;
+}
+
+.list {
+    ol {
+      color: #ccc;
+      list-style-type: none;
+    }
+    ol li {
+      position: relative;
+      margin-bottom: 20px;
+    }
+    li p {
+      padding-left: 60px;
+      color: #555;
+    }
+    span {
+      line-height:2rem;
+      position: absolute;
+        color: $blue;
+        font : {
+            size: 2rem;
+        }
+    }
+}
+
+.explain{
+    color: $grey;
+}
+
+
+
+// footer
+
+#footer {
+    color:#fff;
+    padding:$padding;
+    background: $background;
+}
